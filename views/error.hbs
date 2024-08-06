@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+	
+<!-- begin::Head -->
+<head>
+	<meta charset="utf-8" />
+
+	<title>{{message}}</title>
+	<meta name="description" content="Latest updates and statistic charts">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, shrink-to-fit=no">
+
+	<!--begin::Web font -->
+	<script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.16/webfont.js"></script>
+	<script>
+		WebFont.load({
+			google: { "families": ["Poppins:300,400,500,600,700", "Roboto:300,400,500,600,700"] },
+			active: function () {
+				sessionStorage.fonts = true;
+			}
+		});
+	</script>
+	<!--end::Web font -->
+	<!--begin::Global Theme Styles -->
+	<link href="/assets/vendors/base/vendors.bundle.css" rel="stylesheet" type="text/css" />
+	<link href="/assets/demo/default/base/style.bundle.css" rel="stylesheet" type="text/css" />
+	<!--end::Global Theme Styles -->
+	<style>
+		.m-error-6 .m-error_container .m-error_subtitle>h1 {
+   		font-size: 6rem;
+			word-break: break-all;
+			padding-right: 5rem;
+			padding-left: 5rem;
+      }
+      .m-error-6 .m-error_container .m-error_subtitle>h2 {
+         font-size: 4rem;
+      }
+      .mypretag {
+			line-height: 2 !important;
+			font-weight: 400;
+			letter-spacing: 0.5px;
+      }
+    </style>
+</head>
+<!-- end::Head -->
+
+<!-- begin::Body -->
+<body class="m--skin- m-header--fixed m-header--fixed-mobile m-aside-left--enabled m-aside-left--skin-dark m-aside-left--fixed m-aside-left--offcanvas m-footer--push m-aside--offcanvas-default">
+
+	<!-- begin:: Page -->
+	<div class="m-grid m-grid--hor m-grid--root m-page">
+
+		{{!-- <div class="m-grid__item m-grid__item--fluid m-grid  m-error-6" style="background-image: url(/assets/app/media/img/error/bg6.jpg);">
+			--}}
+			<div class="m-grid__item m-grid__item--fluid m-grid  m-error-6" style="background-color: #009ee5; padding-bottom: 3rem;">
+				<div class="m-error_container">
+					<div class="m-error_subtitle m--font-light">
+						<a href="javascript:;" onclick="window.history.back();" title="Back" class="btn btn-danger m-btn btn-sm	m-btn m-btn--icon">
+							<span>
+								<i class="fa fa-5x flaticon-home-2"></i>
+								{{!-- <span>Back to home</span> --}}
+							</span>
+						</a>
+						<h1 class="mt-5">{{message}}</h1>
+						<h2>{{error.status}}</h2>
+						<pre class="h5 mt-4 mypretag">{{error.stack}}</pre>
+					</div>
+				</div>
+			</div>
+
+		</div>
+		<!-- end:: Page -->
+
+		<!--begin::Global Theme Bundle -->
+		<script src="/assets/vendors/base/vendors.bundle.js" type="text/javascript"></script>
+		<script src="/assets/demo/default/base/scripts.bundle.js" type="text/javascript"></script>
+		<!--end::Global Theme Bundle -->
+
+</body>
+<!-- end::Body -->
+
+</html>

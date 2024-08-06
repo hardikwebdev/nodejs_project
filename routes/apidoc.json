@@ -1,0 +1,24 @@
+{
+  "name": "Node Js API Document",
+  "version": "0.0.0",
+  "description": "Restful API list for Web and Mobile APP request",
+  "title": "Node Js API Document",
+  "url" : "http://localhost:8005/",
+  "order" : [
+    "Auth(admin)",
+    "Admin Profile(admin)",
+    "Category(admin)",
+    "Projects(admin)",
+    "Outlets(admin)",
+    "Products(admin)",
+    "Users(admin)",
+    "Roles(admin)",
+    "Regions(admin)",
+    "General(admin)",
+    "Auth(v1)",
+    "Notification(v1)",
+    "Outlets(v1)",
+    "User-Profile(v1)",
+    "Projects(v1)"
+]
+}
